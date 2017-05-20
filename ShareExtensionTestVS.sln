@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareExtensionTestVS", "Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareExtensionTestVS.UITests", "ShareExtensionTestVS.UITests\ShareExtensionTestVS.UITests.csproj", "{ECE98053-E952-4D6C-BFB2-7BB3BFEA574E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareExtensionTest", "ShareExtensionTest\ShareExtensionTest.csproj", "{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -39,5 +41,17 @@ Global
 		{ECE98053-E952-4D6C-BFB2-7BB3BFEA574E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE98053-E952-4D6C-BFB2-7BB3BFEA574E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE98053-E952-4D6C-BFB2-7BB3BFEA574E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Release|iPhone.ActiveCfg = Release|iPhone
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Release|iPhone.Build.0 = Release|iPhone
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Debug|iPhone.Build.0 = Debug|iPhone
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{AB6965CC-D154-4B3F-9E3F-41D2C361DC87}.Release|Any CPU.Build.0 = Release|iPhone
 	EndGlobalSection
 EndGlobal
