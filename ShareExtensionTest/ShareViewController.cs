@@ -38,7 +38,27 @@ namespace ShareExtensionTest
             // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
 
             // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-            ExtensionContext.CompleteRequest(new NSExtensionItem[0], null);
+            Console.WriteLine("Enter DidSelectPost");
+
+			foreach (var item in ExtensionContext.InputItems)
+			{
+				var attachments = item.Attachments;
+
+				foreach (var attachment in attachments)
+				{
+					if (attachment.HasItemConformingTo("public.url"))
+					{
+						attachment.LoadItem("public.url", null, (url, error) =>
+						{
+							if (url != null)
+							{
+                                Console.WriteLine(url);
+							}
+						});
+					}
+				}
+			}
+			ExtensionContext.CompleteRequest(new NSExtensionItem[0], null);
         }
 
         public override SLComposeSheetConfigurationItem[] GetConfigurationItems()
